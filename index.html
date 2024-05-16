@@ -8,39 +8,30 @@
 <body>
 
 <div id="Calculator">
-    <input id="display" readonly>
+    <input id="display" class="display" readonly>
     <div id="keys">
-
-
-
-        <button id="eraser" class="operator-btn">E</button>
-        <button id="ml" class="operator-btn">*</button>
-
-
-        <button id="dv" class="operator-btn">/</button>
-
-        <button id="clear" class="operator-btn">C</button>
-        <button id="fn7">7</button>
-        <button id="fn8">8</button>
-        <button id="fn9">9</button>
-
-
-        <button id="ad" class="operator-btn">+</button>
-
-        <button id="fn4">4</button>
-        <button id="fn5">5</button>
-        <button id="fn6">6</button>
-        <button id="mi" class="operator-btn">-</button>
-        <button id="1">1</button>
-        <button id="2">2</button>
-        <button id="3">3</button>
-        <button id="equal">=</button>
-        <button  id="fn0">0</button>
-        <button id="point">.</button>
-        <button id="pe">%</button>
+        <button id="eraser" class="operator-btn" onclick="ac()">E</button>
+        <button id="ml" class="operator-btn" onclick="fn('*')">*</button>
+        <button id="dv" class="operator-btn" onclick="fn('/')">/</button>
+        <button id="clear" class="operator-btn" onclick="clearDisplay()">C</button>
+        <button id="fn7" onclick="display('7')">7</button>
+        <button id="fn8" onclick="display('8')">8</button>
+        <button id="fn9" onclick="display('9')">9</button>
+        <button id="ad" class="operator-btn" onclick="fn('+')">+</button>
+        <button id="fn4" onclick="display('4')">4</button>
+        <button id="fn5" onclick="display('5')">5</button>
+        <button id="fn6" onclick="display('6')">6</button>
+        <button id="mi" class="operator-btn" onclick="fn('-')">-</button>
+        <button id="fn1" onclick="display('1')">1</button>
+        <button id="fn2" onclick="display('2')">2</button>
+        <button id="fn3" onclick="display('3')">3</button>
+        <button id="equal" onclick="calculate()">=</button>
+        <button id="fn0" onclick="display('0')">0</button>
+        <button id="point" onclick="display('.')">.</button>
+        <button id="pe" onclick="fn('%')">%</button>
     </div>
 </div>
-
+<script src="jQuery/jquery-3.6.0.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

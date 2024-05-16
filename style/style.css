@@ -10,14 +10,15 @@ body {
     margin: auto;
 }
 
-#display {
+.display {
     width: 260px;
     padding: 20px;
-    font-size: 1rem;
+
+    /*top: 50px;*/
+    /*font-size: 1rem;*/
     border: none;
     background-color: #444141;
-    text-align: left;
-    border-radius: 15px;
+    text-align: right;  border-radius: 15px;
     color: white;
     font-size: 30px;
 }
@@ -72,4 +73,3 @@ button:active {
 #equal:hover{
     background-color: #6876d5;
 }
-
